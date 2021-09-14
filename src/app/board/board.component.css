@@ -1,0 +1,11 @@
+.board-holder{
+    position: absolute;
+    background-color: #37474f;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    color: #f1f1f1;
+}

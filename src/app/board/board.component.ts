@@ -7,7 +7,7 @@ import { TalkersComponent } from './talkers/talkers.component';
   styleUrls: ['./board.component.css']
 })
 export class BoardComponent implements OnInit {
-
+  public nameSubmitState = null;
   constructor() { }
 
   ngOnInit(): void {

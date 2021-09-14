@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TalkersService } from '../../core/talkers.service';
 
 @Component({
   selector: 'app-name-input',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./name-input.component.css']
 })
 export class NameInputComponent implements OnInit {
-
-  constructor() { }
+  constructor(private talkersService: TalkersService) { }
 
   ngOnInit(): void {
+  }
+  
+  submitName(username: string){
+    console.log(username);
+    this.talkersService.addTalker(username);
   }
 
 }

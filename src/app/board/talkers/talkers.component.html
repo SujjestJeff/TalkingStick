@@ -1,1 +1,3 @@
-<p>talkers works!</p>
+<div *ngFor="let talker of talkersService.talkers$ | async">
+    {{talker}}
+</div>

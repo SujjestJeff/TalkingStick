@@ -1,3 +1,16 @@
-<p>board works!!!</p>
-<app-name-input></app-name-input>
-<app-talkers></app-talkers>
+<div class="board-holder">
+    
+    <div class="header">
+        <h1>Talking Stick</h1>
+    </div>
+    
+    <div class="name-input-holder" *ngIf="!nameSubmitState">
+        <app-name-input></app-name-input>
+    </div>
+    
+    <div class="talkers-holder">
+        <app-talkers></app-talkers>
+    </div>
+    
+</div>
+
