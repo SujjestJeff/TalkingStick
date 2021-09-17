@@ -13,7 +13,6 @@ export class NameInputComponent implements OnInit {
   }
   
   submitName(username: string){
-    console.log(username);
     this.talkersService.addTalker(username);
   }
 
